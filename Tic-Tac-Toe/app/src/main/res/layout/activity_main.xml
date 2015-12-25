@@ -1,0 +1,105 @@
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".GameMenu"
+
+    android:orientation="vertical"
+    android:background="@color/material_blue_grey_950">
+
+    <LinearLayout
+        android:id="@+id/layoutMenu"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tic-Tac-Toe"
+            android:textColor="#AAAAAA"
+            android:textSize="30sp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Играть"
+                    android:textSize="20dp"
+                    android:textColor="#AA00CC99"
+                    android:tag="play"
+                    android:onClick="listnerButtonClickMenu"
+                    android:background="@drawable/lmdbutton"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="2dp"
+                    android:padding="10dp"/>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textColor="#AAAAAA"
+                    android:textSize="20dp"
+                    android:text="Авто обучение"
+                    android:tag="auto"
+                    android:onClick="listnerButtonClickMenu"
+                    android:background="@drawable/lmdbutton"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="2dp"
+                    android:padding="10dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Информация"
+                    android:textColor="#AAAAAA"
+                    android:textSize="20dp"
+                    android:tag="info"
+                    android:onClick="listnerButtonClickMenu"
+                    android:background="@drawable/lmdbutton"
+                    android:layout_marginRight="2dp"
+                    android:padding="10dp"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Выход"
+                    android:textColor="#AACC2222"
+                    android:textSize="20dp"
+                    android:tag="exit"
+                    android:onClick="listnerButtonClickMenu"
+                    android:background="@drawable/lmdbutton"
+                    android:layout_marginLeft="2dp"
+                    android:padding="10dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</TableLayout>
